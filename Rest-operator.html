@@ -35,20 +35,38 @@
                     // sum(10,10);
                     //-------------- Rest Operator Technique 2 ------------------//
 
-                                    function sum(name, ...args){
-                                            let sum = 0;
-                                            for(let i in args){
-                                            sum += args[i];
+                            //         function sum(name, ...args){
+                            //                 let sum = 0;
+                            //                 for(let i in args){
+                            //                 sum += args[i];
 
-                                            }
-                                            console.log(sum);
-                                            console.log(name);
+                            //                 }
+                            //                 console.log(sum);
+                            //                 console.log(name);
 
-                                            }
+                            //                 }
 
-                                         sum("Faisal",50,30);
-                            // sum(100,40);
-                            // sum(10,10);
+                            //              sum("Faisal",50,30);
+                            // // sum(100,40);
+                            // // sum(10,10);
+
+                 //-------------- Rest Operator Technique 3 ------------------//
+
+                            function sum(name, ...arg){
+                        console.log(arguments);
+
+                        document.write(`Hello ${name} :`);
+
+                        let sum = 0;
+                        for(let i in arg){
+                            sum+=arg[i];
+
+                        }
+                        document.write(sum);
+
+                    }
+
+                    sum("Muhammad Faisal",30,40,50);
 
 </script>
 
